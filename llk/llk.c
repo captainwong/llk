@@ -1,4 +1,4 @@
-#include <Windows.h>
+ï»¿#include <Windows.h>
 
 
 WCHAR MainMonitorName[64] = { 0 };
@@ -84,7 +84,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 {
 	if (getMainMonitorInfo() == 0) {
 		changeResolution(MainMonitorName, 1024, 768, currentHz);
-		WCHAR llk[1024] = L"Á¬Á¬¿´.exe";
+		WCHAR llk[1024] = L"è¿žè¿žçœ‹.exe";
 		runProcess(llk);
 		changeResolution(MainMonitorName, currentW, currentH, currentHz);
 	}
